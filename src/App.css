@@ -1,51 +1,76 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 80px;
-  float: left;
-  margin-right: 11px;
+    height: 80px;
+    float: left;
+    margin-right: 11px;
 }
 
 .jumbotron {
-  padding-top: 10px;
-  padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.nav > li > a{
-  text-decoration: underline;
+.nav > li > a {
+    text-decoration: underline;
 }
 
-
-.nav > li > a.active:focus,
-.nav > li > a.active:hover,
-.nav > li > a.active {
-  color: white;
-  cursor: default;
-  background-color: darkblue;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
+.nav > li > a.active:focus, .nav > li > a.active:hover, .nav > li > a.active {
+    color: white;
+    cursor: default;
+    background-color: darkblue;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
 }
 
 .border-devide {
-  border-left-width: 1px;
-  border-left-color: black;
-  border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+}
+
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+.skip:focus, .skip:active {
+    left: 30px;
+    top: 30px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 999;
+    padding: 15px 30px;
+    background-color: #e5e5e5;
+}
+
+div:focus, section:focus {
+    outline: none;
 }

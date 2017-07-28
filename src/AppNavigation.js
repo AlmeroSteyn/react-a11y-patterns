@@ -6,13 +6,24 @@ const AppNavigation = () =>
     <nav>
       <ul className="nav nav-pills nav-stacked">
         <li>
-          <NavLink to="/todos" activeClassName="active">
-            {' '}Todos
+          <NavLink
+            to={{ pathname: '/todos', state: { setFocus: true } }}
+            activeClassName="active">
+            Todos
           </NavLink>
         </li>
         <li>
-          <NavLink to="/todo" activeClassName="active">
+          <NavLink
+            to={{ pathname: '/todo', state: { setFocus: true } }}
+            activeClassName="active">
             Add todo
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to={{ pathname: '/contact', state: { setFocus: true } }}
+            activeClassName="active">
+            Contact
           </NavLink>
         </li>
       </ul>

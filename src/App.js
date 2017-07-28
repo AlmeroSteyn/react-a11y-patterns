@@ -12,6 +12,12 @@ class App extends Component {
       <LiveAnnouncer>
         <Router>
           <div className="container">
+            <a className="skip" href="#navigation">
+              Skip to navigation
+            </a>
+            <a className="skip" href="#main">
+              Skip to content
+            </a>
             <div className="row">
               <header className="col-xs-12 page-header">
                 <img
@@ -23,10 +29,13 @@ class App extends Component {
               </header>
             </div>
             <div className="row">
-              <div className="col-xs-12 col-md-4">
+              <div className="col-xs-12 col-md-4" id="navigation" tabIndex="-1">
                 <AppNavigation />
               </div>
-              <div className="col-xs-12 col-md-8 border-devide">
+              <div
+                className="col-xs-12 col-md-8 border-devide"
+                id="main"
+                tabIndex="-1">
                 <AppMain />
               </div>
             </div>
