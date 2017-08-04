@@ -312,6 +312,10 @@ aws4@^1.2.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
+axe-core@~2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.3.1.tgz#be87acabe8c2c6a979761ea7c2b423791fb32f3f"
+
 axobject-query@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-0.1.0.tgz#62f59dbc59c9f9242759ca349960e7a2fe3c36c0"
@@ -4132,10 +4136,6 @@ node-status-codes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/node-status-codes/-/node-status-codes-1.0.0.tgz#5ae5541d024645d32a58fcddc9ceecea7ae3ac2f"
 
-node-uuid@^1.4.8:
-  version "1.4.8"
-  resolved "https://registry.yarnpkg.com/node-uuid/-/node-uuid-1.4.8.tgz#b040eb0923968afabf8d32fb1f17f1167fdab907"
-
 nopt@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-4.0.1.tgz#d0d4685afd5415193c8c7505602d0d17cd64474d"
@@ -4925,6 +4925,12 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
 react-aria-live@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/react-aria-live/-/react-aria-live-1.0.3.tgz#5b4391558de4a416f55dc4c112b0df57d4c4d4cf"
+
+react-axe@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/react-axe/-/react-axe-2.1.7.tgz#1641839ca97607164ae24c837b526b39cf7da170"
+  dependencies:
+    axe-core "~2.3.1"
 
 react-dev-utils@^3.0.2:
   version "3.0.2"
