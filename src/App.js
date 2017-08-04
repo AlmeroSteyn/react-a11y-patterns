@@ -29,11 +29,11 @@ class App extends Component {
               </header>
             </div>
             <div className="row">
-              <div className="col-xs-12 col-md-4" id="navigation" tabIndex="-1">
+              <div className="col-xs-12 col-sm-4" id="navigation" tabIndex="-1">
                 <AppNavigation />
               </div>
               <div
-                className="col-xs-12 col-md-8 border-devide"
+                className="col-xs-12 col-sm-8 border-devide"
                 id="main"
                 tabIndex="-1">
                 <AppMain />
