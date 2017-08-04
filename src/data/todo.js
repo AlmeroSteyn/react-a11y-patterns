@@ -2,12 +2,12 @@ let todos = [
   {
     id: 1,
     name: 'Eggs',
-    description: 'Buy at Albert Hein',
+    description: 'Buy at Albert Heijn',
   },
   {
     id: 2,
     name: 'Dog',
-    description: 'Remeber to walk Miffles',
+    description: 'Remember to walk Miffles',
   },
 ];
 
