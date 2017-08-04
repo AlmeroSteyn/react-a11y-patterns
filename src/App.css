@@ -37,10 +37,18 @@
   text-decoration: underline;
 }
 
-.nav > li > a.active:focus, .nav > li > a.active:hover, .nav > li > a.active {
+.nav > li > a.active {
   color: white;
   cursor: default;
   background-color: darkblue;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.nav > li > a.active:focus, .nav > li > a.active:hover {
+  color: #23527c;
+  cursor: default;
+  background-color: #eeeeee;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -78,4 +86,9 @@ div:focus, section:focus {
 .btn-primary {
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  color: white;
+  background-color: darkblue;
 }
