@@ -79,7 +79,7 @@
   background-color: #e5e5e5;
 }
 
-div:focus, section:focus {
+div:focus, section:focus, h2:focus {
   outline: none;
 }
 

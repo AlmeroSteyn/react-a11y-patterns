@@ -17,8 +17,8 @@ class Todos extends Component {
     return (
       <PageFocusSection
         docTitle="Idea11y demo | Todos"
-        loadedMessage="Todos page loaded.">
-        <h2>Todos</h2>
+        loadedMessage="Todos page loaded."
+        headingText="Todos">
         <div className="row">
           <div className="col-xs-12">
             <ul>
@@ -30,7 +30,9 @@ class Todos extends Component {
             </ul>
           </div>
           <div className="col-xs-12">
-            <Link className="pull-right" to="/todo">
+            <Link
+              className="pull-right"
+              to={{ pathname: '/todo', state: { setFocus: true } }}>
               Add new todo
             </Link>
           </div>

@@ -25,7 +25,10 @@ class Todo extends Component {
     const canSubmit = !!todoName && !!todoDescription;
     if (canSubmit) {
       addTodo({ todoName, todoDescription });
-      this.props.history.replace('/todos');
+      this.props.history.replace({
+        pathname: '/todos',
+        state: { setFocus: true },
+      });
     }
   }
 
@@ -38,8 +41,8 @@ class Todo extends Component {
     return (
       <PageFocusSection
         docTitle="Idea11y demo | Add todo"
-        loadedMessage="Add todo page loaded.">
-        <h2>Add new todo</h2>
+        loadedMessage="Add todo page loaded."
+        headingText="Add new todo">
         <form
           className="form-horizontal"
           noValidate="noValidate"
@@ -61,7 +64,9 @@ class Todo extends Component {
             onChange={this.onChangeHandler}
           />
           <div className="pull-right">
-            <Link to="/todos">Cancel and go back</Link>
+            <Link to={{ pathname: '/todos', state: { setFocus: true } }}>
+              Cancel and go back
+            </Link>
             <button className="btn btn-primary" type="submit">
               Add todo
             </button>

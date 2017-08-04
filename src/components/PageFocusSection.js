@@ -7,17 +7,20 @@ class PageFocusSection extends Component {
   componentDidMount() {
     const { location } = this.props;
     if (location.state && location.state.setFocus) {
-      this.section.focus();
+      this.header.focus();
     }
   }
 
   render() {
-    const { docTitle, loadedMessage, children } = this.props;
+    const { docTitle, loadedMessage, children, headingText } = this.props;
     return (
       <DocumentTitle title={docTitle}>
         <div>
           <LiveMessage aria-live="polite" message={loadedMessage} />
-          <section ref={section => (this.section = section)} tabIndex="-1">
+          <section tabIndex="-1">
+            <h2 tabIndex="-1" ref={header => (this.header = header)}>
+              {headingText}
+            </h2>
             {children}
           </section>
         </div>

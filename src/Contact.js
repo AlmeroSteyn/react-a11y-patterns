@@ -4,8 +4,8 @@ import PageFocusSection from './components/PageFocusSection';
 const Contact = () =>
   <PageFocusSection
     docTitle="Idea11y demo | Contact"
-    loadedMessage="Contact page loaded.">
-    <h2>Contact information</h2>
+    loadedMessage="Contact page loaded."
+    headingText="Contact information">
     <ul>
       <li>
         Email: <a href="mailto:demo@todo.nl">demo@todo.nl</a>
