@@ -17,7 +17,7 @@ class Todos extends Component {
     return (
       <PageFocusSection
         docTitle="Idea11y demo | Todos"
-        loadedMessage="Todos page loaded."
+        liveMessage="Todos page loaded."
         headingText="Todos">
         <div className="row">
           <div className="col-xs-12">

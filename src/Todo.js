@@ -12,6 +12,7 @@ class Todo extends Component {
       todoName: '',
       todoDescription: '',
       showErrors: false,
+      liveMessage: 'Add todo page loaded.',
     };
 
     this.onSubmitHandler = this.onSubmitHandler.bind(this);
@@ -25,10 +26,19 @@ class Todo extends Component {
     const canSubmit = !!todoName && !!todoDescription;
     if (canSubmit) {
       addTodo({ todoName, todoDescription });
-      this.props.history.replace({
-        pathname: '/todos',
-        state: { setFocus: true },
-      });
+      this.setState(
+        {
+          liveMessage: `Todo ${todoName} successfully added.`,
+        },
+        () => {
+          setTimeout(() => {
+            this.props.history.replace({
+              pathname: '/todos',
+              state: { setFocus: true },
+            });
+          }, 50);
+        }
+      );
     }
   }
 
@@ -37,11 +47,13 @@ class Todo extends Component {
   }
 
   render() {
-    const { todoName, todoDescription, showErrors } = this.state;
+    const { todoName, todoDescription, showErrors, liveMessage } = this.state;
+    const canSubmit = !!todoName && !!todoDescription;
+    console.log(liveMessage);
     return (
       <PageFocusSection
         docTitle="Idea11y demo | Add todo"
-        loadedMessage="Add todo page loaded."
+        liveMessage={liveMessage}
         headingText="Add new todo">
         <form
           className="form-horizontal"
@@ -67,7 +79,14 @@ class Todo extends Component {
             <Link to={{ pathname: '/todos', state: { setFocus: true } }}>
               Cancel and go back
             </Link>
-            <button className="btn btn-primary" type="submit">
+            <button
+              className="btn btn-primary"
+              type="submit"
+              aria-label={
+                !canSubmit
+                  ? 'Add todo. Unable to add as some fields are invalid.'
+                  : null
+              }>
               Add todo
             </button>
           </div>

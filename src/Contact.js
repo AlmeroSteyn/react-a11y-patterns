@@ -4,7 +4,7 @@ import PageFocusSection from './components/PageFocusSection';
 const Contact = () =>
   <PageFocusSection
     docTitle="Idea11y demo | Contact"
-    loadedMessage="Contact page loaded."
+    liveMessage="Contact page loaded."
     headingText="Contact information">
     <ul>
       <li>
