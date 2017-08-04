@@ -1,19 +1,13 @@
 let todos = [
   {
     id: 1,
-    name: 'Show how React state works',
+    name: 'Eggs',
+    description: 'Buy at Albert Hein',
   },
   {
     id: 2,
-    name: 'Show how to display lists of data',
-  },
-  {
-    id: 3,
-    name: 'Show how to conditionally display data',
-  },
-  {
-    id: 4,
-    name: 'Show how to pass props and events',
+    name: 'Dog',
+    description: 'Remeber to walk Miffles',
   },
 ];
 
@@ -25,6 +19,7 @@ export const addTodo = newTodo => {
   }, 0);
   todos.push({
     id: newId + 1,
-    name: newTodo,
+    name: newTodo.todoName,
+    description: newTodo.todoDescription,
   });
 };

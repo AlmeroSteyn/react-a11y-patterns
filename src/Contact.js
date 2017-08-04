@@ -1,9 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PageFocusSection from './components/PageFocusSection';
 
-class Contact extends Component {
-  render() {
-    return <span>Contact</span>;
-  }
-}
+const Contact = () =>
+  <PageFocusSection
+    docTitle="Idea11y demo | Contact"
+    loadedMessage="Contact page loaded.">
+    <h2>Contact information</h2>
+    <ul>
+      <li>
+        Email: <a href="mailto:demo@todo.nl">demo@todo.nl</a>
+      </li>
+      <li>Phone: +31 6 00 00 00 01</li>
+    </ul>
+  </PageFocusSection>;
 
 export default Contact;

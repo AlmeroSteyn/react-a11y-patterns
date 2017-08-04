@@ -10,7 +10,8 @@
     "react-document-title": "^2.0.3",
     "react-dom": "next",
     "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "uuid": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

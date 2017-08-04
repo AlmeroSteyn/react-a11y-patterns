@@ -25,7 +25,7 @@ class App extends Component {
                   className="App-logo"
                   src={require('./idea11y.jpg')}
                 />
-                <h1>React a11y patterns</h1>
+                <h1>Accessible React Todo</h1>
               </header>
             </div>
             <div className="row">
