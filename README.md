@@ -4,7 +4,7 @@
 
 - Accessible form elements
 - Accessible React Router transitions
-- ARIA live reqions
+- ARIA live regions
 - Skiplinks
 
 ## Running the application
