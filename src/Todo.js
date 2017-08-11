@@ -49,7 +49,6 @@ class Todo extends Component {
   render() {
     const { todoName, todoDescription, showErrors, liveMessage } = this.state;
     const canSubmit = !!todoName && !!todoDescription;
-    console.log(liveMessage);
     return (
       <PageFocusSection
         docTitle="Idea11y demo | Add todo"
