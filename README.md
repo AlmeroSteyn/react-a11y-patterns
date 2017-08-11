@@ -1,13 +1,13 @@
-#Companion application for React Accessibility Patterns Talk
+# Companion application for React Accessibility Patterns Talk
 
-##Application features
+## Application features
 
 - Accessible form elements
 - Accessible React Router transitions
 - ARIA live reqions
 - Skiplinks
 
-##Running the application
+## Running the application
 
 Clone the repository and install the `npm` packages and then start it.
 
