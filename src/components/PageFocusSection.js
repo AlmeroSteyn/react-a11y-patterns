@@ -17,7 +17,7 @@ class PageFocusSection extends Component {
       <DocumentTitle title={docTitle}>
         <div>
           <LiveMessage aria-live="polite" message={liveMessage} />
-          <section tabIndex="-1">
+          <section>
             <h2 tabIndex="-1" ref={header => (this.header = header)}>
               {headingText}
             </h2>
