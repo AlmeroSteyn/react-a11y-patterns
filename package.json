@@ -6,7 +6,7 @@
     "bootstrap": "^3.3.7",
     "prettier": "^1.5.3",
     "react": "next",
-    "react-aria-live": "^1.0.3",
+    "react-aria-live": "^1.0.4",
     "react-axe": "^2.1.7",
     "react-document-title": "^2.0.3",
     "react-dom": "next",
