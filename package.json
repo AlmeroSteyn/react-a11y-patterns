@@ -5,13 +5,13 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "prettier": "^1.5.3",
-    "react": "next",
+    "react": "16.0.0",
     "react-aria-live": "^1.0.4",
     "react-axe": "^2.1.7",
     "react-document-title": "^2.0.3",
-    "react-dom": "next",
+    "react-dom": "16.0.0",
     "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.10",
+    "react-scripts": "1.0.14",
     "uuid": "^3.1.0"
   },
   "scripts": {
