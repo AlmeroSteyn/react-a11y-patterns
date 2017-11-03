@@ -5,25 +5,20 @@ import PageFocusSection from './components/PageFocusSection';
 import { addTodo } from './data/todo';
 
 class Todo extends Component {
-  constructor(props) {
-    super(props);
+  state = {
+    todoName: '',
+    todoDescription: '',
+    showErrors: false,
+    liveMessage: 'Add todo page loaded.',
+  };
 
-    this.state = {
-      todoName: '',
-      todoDescription: '',
-      showErrors: false,
-      liveMessage: 'Add todo page loaded.',
-    };
-
-    this.onSubmitHandler = this.onSubmitHandler.bind(this);
-    this.onChangeHandler = this.onChangeHandler.bind(this);
-  }
-
-  onSubmitHandler(e) {
-    e.preventDefault();
-    this.setState({ showErrors: true });
+  onSubmitHandler = e => {
     const { todoName, todoDescription } = this.state;
     const canSubmit = !!todoName && !!todoDescription;
+
+    e.preventDefault();
+    this.setState({ showErrors: true });
+
     if (canSubmit) {
       addTodo({ todoName, todoDescription });
       this.setState(
@@ -40,15 +35,16 @@ class Todo extends Component {
         }
       );
     }
-  }
+  };
 
-  onChangeHandler(e) {
+  onChangeHandler = e => {
     this.setState({ [e.target.name]: e.target.value });
-  }
+  };
 
   render() {
     const { todoName, todoDescription, showErrors, liveMessage } = this.state;
     const canSubmit = !!todoName && !!todoDescription;
+
     return (
       <PageFocusSection
         docTitle="#ID24 demo | Add todo"

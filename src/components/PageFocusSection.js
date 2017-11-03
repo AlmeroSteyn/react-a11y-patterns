@@ -12,15 +12,22 @@ class PageFocusSection extends Component {
   }
 
   render() {
-    const { docTitle, liveMessage, children, headingText } = this.props;
+    const {
+      docTitle,
+      liveMessage,
+      children,
+      headingText,
+      headingLevel,
+    } = this.props;
+    const HeaderLevel = `h${headingLevel ? headingLevel : '2'}`;
     return (
       <DocumentTitle title={docTitle}>
         <div>
           <LiveMessage aria-live="polite" message={liveMessage} />
           <section>
-            <h2 tabIndex="-1" ref={header => (this.header = header)}>
+            <HeaderLevel tabIndex="-1" ref={header => (this.header = header)}>
               {headingText}
-            </h2>
+            </HeaderLevel>
             {children}
           </section>
         </div>

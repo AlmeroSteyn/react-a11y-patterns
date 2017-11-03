@@ -2,17 +2,12 @@ import React, { Component } from 'react';
 import uuid from 'uuid';
 
 class LabelledInput extends Component {
-  constructor(props) {
-    super(props);
+  inputId = uuid.v4();
+  describedById = uuid.v4();
 
-    this.inputId = uuid.v4();
-    this.describedById = uuid.v4();
-    this.onChangeHandler = this.onChangeHandler.bind(this);
-  }
-
-  onChangeHandler(e) {
+  onChangeHandler = e => {
     this.props.onChange(e);
-  }
+  };
 
   render() {
     const { value, labelText, name, errorText, showErrors } = this.props;
