@@ -1,9 +1,9 @@
 import React from 'react';
 import PageFocusSection from './components/PageFocusSection';
 
-const Contact = () =>
+const Contact = () => (
   <PageFocusSection
-    docTitle="Idea11y demo | Contact"
+    docTitle="#ID24 demo | Contact"
     liveMessage="Contact page loaded."
     headingText="Contact information">
     <ul>
@@ -12,6 +12,7 @@ const Contact = () =>
       </li>
       <li>Phone: +31 6 00 00 00 01</li>
     </ul>
-  </PageFocusSection>;
+  </PageFocusSection>
+);
 
 export default Contact;

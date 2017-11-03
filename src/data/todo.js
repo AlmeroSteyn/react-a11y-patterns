@@ -2,7 +2,7 @@ let todos = [
   {
     id: 1,
     name: 'Eggs',
-    description: 'Buy at Albert Heijn',
+    description: 'Buy at Tesco',
   },
   {
     id: 2,

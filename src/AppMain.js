@@ -4,7 +4,7 @@ import Todo from './Todo';
 import Todos from './Todos';
 import Contact from './Contact';
 
-const AppMain = () =>
+const AppMain = () => (
   <main>
     <Switch>
       <Route path="/todos" component={Todos} />
@@ -12,6 +12,7 @@ const AppMain = () =>
       <Route path="/contact" component={Contact} />
       <Redirect to="/todos" />
     </Switch>
-  </main>;
+  </main>
+);
 
 export default AppMain;

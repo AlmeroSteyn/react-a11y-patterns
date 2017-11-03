@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const AppNavigation = () =>
+const AppNavigation = () => (
   <aside>
     <nav>
       <ul className="nav nav-pills nav-stacked">
@@ -28,6 +28,7 @@ const AppNavigation = () =>
         </li>
       </ul>
     </nav>
-  </aside>;
+  </aside>
+);
 
 export default AppNavigation;

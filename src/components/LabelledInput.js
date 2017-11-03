@@ -20,9 +20,7 @@ class LabelledInput extends Component {
 
     return (
       <div className={!hasValue && showErrors ? 'has-error' : null}>
-        <label htmlFor={this.inputId}>
-          {labelText}
-        </label>
+        <label htmlFor={this.inputId}>{labelText}</label>
         <input
           id={this.inputId}
           name={name}
@@ -39,15 +37,15 @@ class LabelledInput extends Component {
           aria-live="polite"
           aria-relevant="additions"
           aria-atomic="true">
-          {!hasValue && showErrors
-            ? <span className="help-block" id={this.describedById}>
-                <i
-                  className="glyphicon glyphicon-exclamation-sign"
-                  aria-hidden="true"
-                />
-                {errorText}
-              </span>
-            : null}
+          {!hasValue && showErrors ? (
+            <span className="help-block" id={this.describedById}>
+              <i
+                className="glyphicon glyphicon-exclamation-sign"
+                aria-hidden="true"
+              />
+              {errorText}
+            </span>
+          ) : null}
         </div>
       </div>
     );

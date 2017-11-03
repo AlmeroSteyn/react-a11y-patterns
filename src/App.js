@@ -23,7 +23,7 @@ class App extends Component {
                 <img
                   alt="Acessibility meetup logo"
                   className="App-logo"
-                  src={require('./idea11y.jpg')}
+                  src={require('./id24.jpg')}
                 />
                 <h1>Accessible React Todo</h1>
               </header>

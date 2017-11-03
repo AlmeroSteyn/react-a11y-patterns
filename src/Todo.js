@@ -51,7 +51,7 @@ class Todo extends Component {
     const canSubmit = !!todoName && !!todoDescription;
     return (
       <PageFocusSection
-        docTitle="Idea11y demo | Add todo"
+        docTitle="#ID24 demo | Add todo"
         liveMessage={liveMessage}
         headingText="Add new todo">
         <form

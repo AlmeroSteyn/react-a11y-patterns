@@ -16,17 +16,15 @@ class Todos extends Component {
     const { todos } = this.state;
     return (
       <PageFocusSection
-        docTitle="Idea11y demo | Todos"
+        docTitle="#ID24 demo | Todos"
         liveMessage="Todos page loaded."
         headingText="Todos">
         <div className="row">
           <div className="col-xs-12">
             <ul>
-              {todos.map(todo =>
-                <li key={todo.id}>
-                  {`${todo.name} - ${todo.description}`}
-                </li>
-              )}
+              {todos.map(todo => (
+                <li key={todo.id}>{`${todo.name} - ${todo.description}`}</li>
+              ))}
             </ul>
           </div>
           <div className="col-xs-12">
