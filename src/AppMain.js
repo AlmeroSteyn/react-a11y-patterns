@@ -1,16 +1,16 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import Todo from './Todo';
-import Todos from './Todos';
+import Task from './Task';
+import Tasks from './Tasks';
 import Contact from './Contact';
 
 const AppMain = () => (
   <main>
     <Switch>
-      <Route path="/todos" component={Todos} />
-      <Route path="/todo" component={Todo} />
+      <Route path="/tasks" component={Tasks} />
+      <Route path="/task" component={Task} />
       <Route path="/contact" component={Contact} />
-      <Redirect to="/todos" />
+      <Redirect to="/tasks" />
     </Switch>
   </main>
 );

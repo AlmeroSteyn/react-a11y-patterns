@@ -21,11 +21,11 @@ class App extends Component {
             <div className="row">
               <header className="col-xs-12 page-header">
                 <img
-                  alt="Acessibility meetup logo"
+                  alt="React Amsterdam meetup logo"
                   className="App-logo"
-                  src={require('./id24.jpg')}
+                  src={require('./react-amsterdam.svg')}
                 />
-                <h1>Accessible React Todo</h1>
+                <h1>Accessible React Task Manager</h1>
               </header>
             </div>
             <div className="row">

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "3.3.7",
+    "classnames": "^2.2.5",
     "prettier": "1.10.2",
     "react": "16.2.0",
     "react-aria-live": "1.0.4",

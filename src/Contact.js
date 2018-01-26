@@ -3,7 +3,7 @@ import PageFocusSection from './components/PageFocusSection';
 
 const Contact = () => (
   <PageFocusSection
-    docTitle="#ID24 demo | Contact"
+    docTitle="React Amsterdam Demo Contact Page"
     liveMessage="Contact page loaded."
     headingText="Contact information">
     <ul>
