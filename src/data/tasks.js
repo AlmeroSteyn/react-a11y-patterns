@@ -20,7 +20,7 @@ export const getTasks = () => {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve(tasks);
-    }, 800);
+    }, 6000);
   });
 };
 
@@ -37,6 +37,6 @@ export const addTask = newTask => {
         description: newTask.taskDescription,
       });
       resolve({});
-    }, 4000);
+    }, 6000);
   });
 };

@@ -6,26 +6,28 @@ import { getTasks } from './data/tasks';
 class Tasks extends Component {
   state = {
     tasks: [],
+    liveMessage: 'Tasks page loading.',
     isLoading: true,
   };
 
   componentDidMount() {
     getTasks().then(tasks => {
-      this.setState({ tasks, isLoading: false });
+      this.setState({ tasks, isLoading: false, liveMessage: 'Tasks loaded.' });
     });
   }
 
   render() {
-    const { tasks, isLoading } = this.state;
+    const { tasks, isLoading, liveMessage } = this.state;
     return (
       <PageFocusSection
         docTitle="React Amsterdam Demo Tasks Page"
-        liveMessage="Tasks page loaded."
+        liveMessage={liveMessage}
         headingText="Tasks">
         {isLoading ? (
           <div className="row">
-            <div className="col-xs-12">
-              <div role="status">Tasks loading...</div>
+            <div aria-hidden="true" className="col-xs-12 loading">
+              <p>Tasks loading...</p>
+              <div className="spinner" />
             </div>
           </div>
         ) : (
