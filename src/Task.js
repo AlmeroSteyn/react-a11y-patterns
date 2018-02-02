@@ -36,7 +36,7 @@ class Task extends Component {
               pathname: '/tasks',
               state: { setFocus: true },
             });
-          }, 100);
+          });
         }
       );
     }
